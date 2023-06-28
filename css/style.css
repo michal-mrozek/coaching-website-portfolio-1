@@ -363,7 +363,7 @@
   }
   
   body {
-    color: silver;
+    color: #36454F;
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -372,7 +372,7 @@
   /* HEADER BACKGROUND */
   
   .header-main-page {
-    background-image: url(../images/header-bg1.png);
+    background-image: url(../images/header-bg.png);
     background-position: center center -15vw;
     background-repeat: no-repeat;
     background-size: cover;
@@ -470,6 +470,18 @@
   .btn.active {
     border: 1px solid #3c3c3c;
   }
+  
+  /*REASONS' BUTTON */
+
+  .btn-large {
+    font-size: 3.6rem;
+    line-height: 1.35em;
+    text-transform: uppercase;
+    padding: 0.5em 1.666em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
 
   /* SLOGAN */
 
@@ -477,6 +489,7 @@
     height: calc(100% - 300px);
     display: flex;
     align-items: center;
+    color: silver;
   }
 
   .slogan-item {
@@ -505,6 +518,109 @@
     
   }
 
+  /* REASONS */
+
+  
+  
+  .reasons {
+    margin: 60px 0;
+    padding: 0 30px;
+    text-align: center;
+  }
+  
+  
+  .reasons-container {
+    margin: 0 auto;
+    padding: 50px 0;
+    max-width: 1100px;
+    width: 100%;
+    background-color: #ebebeb;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+  
+  
+  .reasons-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 35px;
+  }
+  
+  
+  .icon {
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+  }
+  
+  
+  .icon-target {
+    background-image: url("../images/icon-target.png");
+  }
+  
+ 
+  .icon-growth {
+    background-image: url("../images/icon-growth.png");
+  }
+  
+  
+  .icon-overcome {
+    background-image: url("../images/icon-overcome.png");
+  }
+  
+ 
+  .icon-balance {
+    background-image: url("../images/icon-balance.png");
+  }
+  
+  
+  .reasons-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+  }
+  
+  
+  .reasons-item h3:after {
+    content: "";
+    display: block;
+    margin-top: 20px;
+    margin-left: calc(50% - 45px);
+    width: 90px;
+    height: 1px;
+    background-color: #3c3c3c;
+  }
+  
+  
+  .reasons-item p {
+    font-size: 1.6rem;
+  }
+  
+ 
+  .reasons .btn {
+    margin-top: 30px;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 3.5rem;
+  }
+  
+  h2:after {
+    content: "";
+    display: block;
+    width: 256px;
+    height: 40px;
+    background-image: url(../images/decoration.svg);
+    background-size: contain;
+    margin-top: 25px;
+    margin-left: calc(50% - 128px);
+  }
 
 
   /* CONTAINERS */
