@@ -622,6 +622,41 @@
     margin-left: calc(50% - 128px);
   }
 
+  /* ABOUT ME */
+
+  .about-me {
+    display: flex;
+    align-items: center;
+    background-color: #ebebeb;
+    padding: 60px 0;
+  }
+  
+  
+  .about-me > div {
+    width: 50%;
+  }
+  
+ 
+  .about-me-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  
+  .about-me-text p {
+    width: 70%;
+    font-size: 2.2rem;
+    line-height: 2em;
+  }
+
+  
+  .about-me-image img {
+    width: 100%;
+    height: auto;
+  }
+
 
   /* CONTAINERS */
 
