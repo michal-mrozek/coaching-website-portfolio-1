@@ -358,6 +358,11 @@
    
 
    /* GENERAL*/
+
+   * {
+    box-sizing: border-box;
+  }
+
   html {
     font-size: 60%;
   }
@@ -751,6 +756,131 @@
   width: 70%;
 }
 
+
+  /* FOOTER */
+
+  footer {
+    min-height: 70vh;
+    background-color: #ebebeb;
+    background-image: url(../images/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  
+  .contact {
+    max-width: 60%;
+    align-items: center;
+    padding-right: 30px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  
+  .contact h3 {
+    padding: 0 15px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+  
+  /* CONTACT FORM */
+
+  .form-contact {
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70%
+  }
+
+  .form-group {
+    width: 100%;
+    padding: 0 15px;
+    margin-bottom: 20px;
+  }
+
+  .form-group-50 {
+    width: 50%;
+  }
+
+
+  .form-contact textarea,
+  .form-group input[type="text"]{
+    padding: 8px 12px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #3c3c3c;
+    background: transparent;
+    resize: none;
+    font-size: 1.8rem;
+    outline: none;
+    transition: border 0.2s ease-in-out;
+    color: #3c3c3c;
+    max-width: none;
+  }
+
+  
+  
+  .form-group:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .form-contact input[type="text"]:focus,
+  .form-contact textarea:focus {
+  border-bottom: 3px solid #f9c910;
+  }
+
+  .form-contact input[type="text"]::placeholder,
+  .form-contact textarea::placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #3c3c3c;
+  }
+
+  
+  .contact form [type="submit"] {
+    margin-top: 35px;
+  }
+  
+
+
+  /* COPYRIGHT & ICONS*/
+  footer .bottom-line {
+    align-self: center;
+    display: flex;
+    margin-bottom: 12px;
+  }
+  
+  
+  footer .bottom-line-copy {
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+  }
+  
+  
+  footer .bottom-line-icons {
+    position: absolute;
+    right: 10vw;
+    bottom: 20px;
+  }
+  
+
+  footer .bottom-line-icons a img {
+    width: 20px;
+    height: 20px;
+    opacity: 0.8;
+  }
 
   /* CONTAINERS */
 
