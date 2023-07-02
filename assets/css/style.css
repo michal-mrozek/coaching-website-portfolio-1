@@ -897,4 +897,44 @@
     width: 90vw;
   }
   
- 
+ /* RESPONSIVNESS */
+
+
+  @media screen and (max-width: 1200px) {
+    .header-main-page{
+    background-position: center right;
+    height: 100vh;
+    }
+    .menu {
+      width: 70%;
+    }
+    .nav-actions{
+      width: 25%;
+    }
+    .slogan {
+      height: calc(100% - 450px);
+      justify-content: right;
+    }
+    .about-me{
+      display: contents;
+      text-align: center;
+    }
+    .about-me > div {
+      width: 100%;
+    }
+    footer{
+      min-height: 50vh;
+    }
+
+
+
+}
+
+  @media screen and (max-width: 950px) {
+  
+  }
+
+  @media screen and (max-width: 800px) {
+  
+  }
+  
