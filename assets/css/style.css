@@ -427,8 +427,6 @@
     padding: 1em 1.666em;
     border: 1px solid silver;
     text-align: center;
-    -webkit-transition: border-color 0.2s ease-in-out;
-    -o-transition: border-color 0.2s ease-in-out;
     transition: border-color 0.2s ease-in-out;
     background: transparent;
     cursor: pointer;
@@ -760,17 +758,25 @@
   /* FOOTER */
 
   footer {
-    min-height: 70vh;
-    background-color: #ebebeb;
-    background-image: url(../images/footer-bg.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
     position: relative;
+    background-color: #ebebeb;
+  }
+
+  .footer-bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 70vh;
+    height: 100%;
+    background-image: url(../images/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
   }
   
   
@@ -900,7 +906,7 @@
  /* RESPONSIVNESS */
 
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1024px) {
     .header-main-page{
     background-position: center right;
     height: 100vh;
@@ -915,6 +921,10 @@
       height: calc(100% - 450px);
       justify-content: right;
     }
+    .slogan-item h1 {
+      font-size: 5rem;
+      line-height: 6rem;
+    } 
     .about-me{
       display: contents;
       text-align: center;
@@ -930,11 +940,44 @@
 
 }
 
-  @media screen and (max-width: 950px) {
-  
-  }
+  @media screen and (max-width: 943px) {
+    .header-main-page {
+      background-position: right -15vw top ; 
+    }
+    
+    .menu{
+      width:70%;
+    }
+    
+    .nav-actions{
+      margin: 0;
+      width: 25%;
+      float:right;
+    }
+    .btn{
+      font-size: 1.7rem;
+      padding: 1em 1em;
+    }
+    .services-items li{
+      flex-direction: column;
+    }
+    .services-items .col::after{
+    margin-bottom: 25px;
+    margin-top: 5px;
+    }
+    .services-items li{
+      margin:0;
+    }
 
-  @media screen and (max-width: 800px) {
+    .footer-bg{
+      opacity: 0.3;      
+    }
+    .contact {
+      max-width: 60%;
+    }
+
+}
+  @media screen and (max-width: 600px) {
   
   }
   
