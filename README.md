@@ -110,6 +110,12 @@ The site was deployed to GitHub pages.
 - html files pass through the [Jigsaw validator](https://jigsaw.w3.org/css-validator/) with no issues found.
 ![Jigsaw validator message](/assets/images-readme/css-test.png)
 
+### Unsolved Bug
+
+Link to "About Me" in hamburger menu doesn't work. In full width navigation menu working fine.
+
+![Bug](/assets/images-readme/bug.png)
+
 ## Contributing
 
 Contributions to this project are welcome. If you find any issues or would like to suggest improvements, please create a pull request or submit an issue in the repository.
